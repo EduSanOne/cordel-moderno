@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@font-face {
+    font-family: 'tsite' ;
+    src: url(../fontes/titulo/AlegreyaSansSC-Bold.ttf);
+}
+:root {
+    --color01: black;
+    --color02: white;
+
+    --fonte-do-poema: 'Sriracha';
+    --titulo-do-site: 'tsite';
+}
+
+
+header {
+    background-color: var(--color01);
+    margin: 0;
+    padding: 50px;
+}
+
+header h1 {
+    color: var(--color02);
+    text-align: center;
+    font-family: var(--titulo-do-site);
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+
+header p {
+    color: gray;
+    text-align: center;
+}
+
+header a {
+    color: var(--color02);
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+main p {
+    font-family: var(--fonte-do-poema);
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-size: 3.5vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 1em;
+}
+
+section {
+    padding: 30px;
+}
+
+section.imagem {
+    
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+    display: inline-block;
+    text-shadow: 1px 1px 10px yellow;
+}
+
+#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+footer {
+    background-color: var(--color01);
+    color: var(--color02);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: blue;
+}
